@@ -1,6 +1,6 @@
 <template>
     <section class="contact">
-      <h2>Contact Us</h2>
+      <h2>Hubungi Kami</h2>
       <form @submit.prevent="submitForm">
         <label for="name">Name:</label>
         <input type="text" id="name" v-model="name" />

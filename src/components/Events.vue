@@ -6,6 +6,12 @@
           <strong>{{ event.name }}</strong> - {{ event.date }}
         </li>
       </ul>
+      <h3>Identitas Proyek:</h3>
+      <p>Nama Proyek: Student Organization Web</p>
+      <p>Pengembang: John Smith</p>
+  
+      <h3>Dokumentasi Proyek:</h3>
+      <p>Halaman ini berisi daftar acara mendatang yang diselenggarakan oleh organisasi mahasiswa.</p>
     </section>
   </template>
   
