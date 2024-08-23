@@ -21,46 +21,54 @@
   </template>
   
   <script>
-  import emailjs from 'emailjs-com';
-  
-  export default {
-    name: 'Contact',
-    data() {
-      return {
-        name: '',
-        email: '',
-        message: '',
-        messageSent: false,
-      };
+import emailjs from 'emailjs-com';
+
+export default {
+  name: 'Contact',
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+      messageSent: false,
+    };
+  },
+  methods: {
+    async submitForm() {
+      if (!this.name || !this.email || !this.message) {
+        alert('Please fill out all fields before submitting the form.');
+        return;
+      }
+
+      try {
+        const templateParams = {
+          name: this.name,
+          email: this.email,
+          message: this.message,
+        };
+
+        await emailjs.send(
+          'service_5bmwtxt', // Service ID from Admin
+          'template_okfo4ia', // Replace with your template ID
+          templateParams,
+          'iXO7_e9c6elpJjZjk' // Replace with your user ID (public key from Admin)
+        );
+
+        this.messageSent = true;
+        this.name = '';
+        this.email = '';
+        this.message = '';
+        alert('Pesan Berhasil Dikirim!');
+      } catch (error) {
+        console.error('Failed to send email:', error);
+        alert('Failed to send message. Please try again later.');
+      }
     },
-    methods: {
-      async submitForm() {
-        try {
-          const templateParams = {
-            name: this.name,
-            email: this.email,
-            message: this.message,
-          };
-  
-          await emailjs.send(
-            'service_gd70wth', // Service ID from Admin
-            'template_2lwppr8', // Replace with your template ID
-            templateParams,
-            'M-9yjvZkDtaR1E4mn' // Replace with your user ID (public key from Admin)
-          );
-  
-          this.messageSent = true;
-          this.name = '';
-          this.email = '';
-          this.message = '';
-        } catch (error) {
-          console.error('Failed to send email:', error);
-          alert('Failed to send message. Please try again later.');
-        }
-      },
-    },
-  };
-  </script>
+  },
+};
+</script>
+
+
   
   <style scoped>
   .contact {

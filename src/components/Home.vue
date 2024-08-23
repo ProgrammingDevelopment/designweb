@@ -11,32 +11,6 @@
       <h3>Dokumentasi Proyek:</h3>
       <p>Ini adalah aplikasi web untuk organisasi mahasiswa, yang mencakup fitur-fitur seperti pengelolaan acara, profil organisasi, dan formulir kontak.</p>
     </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="../assets/Logo BSI.png" alt="Logo" class="logo" />
-            <h1>Selamat datang Di Teknologi Informasi!</h1>
-          </div>
-          <div class="footer-links">
-            <a href="#about">About Us</a>
-            <a href="#events">Events</a>
-            <a href="#resources">Resources</a>
-            <a href="#contact">Contact Us</a>
-          </div>
-          <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Reasearch & Development HMTI. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
