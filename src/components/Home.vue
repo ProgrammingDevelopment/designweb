@@ -9,7 +9,7 @@
       <p>Pengembang: Tim Divisi Penelitian & Pengembangan</p>
 
       <h3>Dokumentasi Proyek:</h3>
-      <p>Ini adalah aplikasi web untuk organisasi mahasiswa, yang mencakup fitur-fitur seperti pengelolaan acara, profil organisasi, dan formulir kontak.</p>
+      <p>Fitur fitur baru akan hadir!!!!</p>
     </section>
   </div>
 </template>

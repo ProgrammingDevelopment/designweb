@@ -1,15 +1,15 @@
 <template>
     <section class="contact">
-      <h2>Contact Us</h2>
+      <h2>Hubungi kami</h2>
       <form @submit.prevent="submitForm">
-        <label for="name">Name:</label>
+        <label for="name">Nama:</label>
         <input type="text" id="name" v-model="name" required />
   
         <label for="email">Email:</label>
         <input type="email" id="email" v-model="email" required />
   
-        <label for="message">Message:</label>
-        <textarea id="message" v-model="message" required></textarea>
+        <label for="message">Pesan:</label>
+        <textarea id="message" v-model="pesan" required></textarea>
   
         <button type="submit">Submit</button>
       </form>
@@ -60,17 +60,16 @@ export default {
         this.message = '';
         alert('Pesan Berhasil Dikirim!');
       } catch (error) {
-        console.error('Failed to send email:', error);
-        alert('Failed to send message. Please try again later.');
+        console.error('Gagal Mengirimkan Pesan:', error);
+        alert('gagal mengirim pesan. mohon coba kembali.');
       }
     },
   },
 };
 </script>
 
-
-  
-  <style scoped>
+<!-- Adding Css styles -->
+<style scoped>
   .contact {
     padding: 20px;
   }

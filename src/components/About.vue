@@ -29,28 +29,28 @@ export default {
           name: 'Swandaru Tirta Sandhika',
           position: 'Kepala Divisi',
           image: 'src/assets/swan.JPG',
-          contact: 'https://linkedin.com/in/johnsmith',
-          contactText: 'LinkedIn'
+          contact: 'https://www.linkedin.com/in/swandaru-tirta-sandhika/',
+          contactText: 'LinkedIn', 
         },
         {
           name: 'Farid panji Alamsah',
           position: 'Anggota Divisi',
           image: 'src/assets/farid_anggota.JPG',
-          contact: 'https://twitter.com/emilyjohnson',
-          contactText: 'Twitter'
+          contact: 'https://www.linkedin.com/in/farid-panji-alamsah',
+          contactText: 'Linkedin'
         },
         {
           name: 'Sahira Bella Kintayari',
           position: 'Koordinator Proyek',
           image: 'src/assets/bella.JPG',
-          contact: 'mailto:michaelbrown@example.com',
+          contact: '',
           contactText: 'Email'
         },
         {
           name: 'Zay',
           position: 'Staff Muda Litbang',
           image: 'src/assets/Zay_staff.JPG',
-          contact: 'https://github.com/sarahlee',
+          contact: '',
           contactText: 'GitHub'
         }
       ]

@@ -15,7 +15,7 @@
     <p>Pengembang: HMTI UBSI</p>
 
     <h3>Dokumentasi Proyek:</h3>
-    <p>Halaman ini berisi daftar acara mendatang yang diselenggarakan oleh organisasi mahasiswa.</p>
+    <p>Under Maintance!</p>
   </section>
 </template>
 

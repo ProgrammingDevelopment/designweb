@@ -1,7 +1,16 @@
 <template>
   <div id="app">
+    <!-- Elemen audio untuk background sound -->
+    <audio ref="bgAudio" loop>
+      <source src="./assets/audio/MARS  BSI 2024.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navbar (Assuming Navbar component is imported correctly) -->
     <Navbar />
     <router-view />
+
+    <!-- Footer Section -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -12,10 +21,15 @@
             <router-link to="/contact">Contact Us</router-link>
           </div>
           <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="tel:085697309372" target="_blank">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="https://www.instagram.com/hmti.kramat98/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:hmti.kramat98@gmail.com" target="_blank">
+              <i class="fab fa-envelope"></i>
+            </a>
           </div>
         </div>
         <div class="footer-bottom">
@@ -32,8 +46,20 @@ import Navbar from './components/Navbar.vue';
 export default {
   name: 'App',
   components: {
-    Navbar,
+    Navbar
   },
+  mounted() {
+    const audioElement = this.$refs.bgAudio;
+    
+    // Fungsi untuk memutar audio setelah interaksi
+    const playAudio = () => {
+      audioElement.play();
+      document.removeEventListener('click', playAudio);
+    };
+    
+    // Tambahkan event listener untuk mulai memutar audio
+    document.addEventListener('click', playAudio);
+  }
 };
 </script>
 
