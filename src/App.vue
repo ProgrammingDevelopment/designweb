@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Elemen audio untuk background sound -->
-    <audio ref="bgAudio" loop>
+    <audio ref="bgAudio">
       <source src="./assets/audio/MARS  BSI 2024.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
