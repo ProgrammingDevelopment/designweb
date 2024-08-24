@@ -38,4 +38,4 @@ Follow these steps to get the project up and running on your local machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/student-organization.git
+   git clone https://github.com/ProgrammingDevelopment/designweb.git
